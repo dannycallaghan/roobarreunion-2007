@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB">
+	<head>
+		<title>roo bar reunion 2007 - yes, you were that stupid</title>
+		<meta name="description" lang="en" content="" />
+		<meta name="keywords" lang="en" content="" />
+		<meta name="title" lang="en" content="roobarreunion.com" />
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+		<meta http-equiv="Content-Language" content="en-gb" />	
+		<meta name="author" content="danny callaghan" />
+		<meta name="robots" content="nofollow" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<style type="text/css" media="all">@import "/_css/css.css";</style>
+		<script type="text/javascript" src="/_js/prototype.js"></script>
+		<script type="text/javascript" src="/_js/js.js"></script>
+		<script type="text/javascript" src="/_js/highslide.js"></script>
+
+	</head>
+<body>
+
+<h1><a href="/" title="roo bar reunion 2007 home">roo bar reunion 2007 - yes, you were that stupid.</a></h1>
+
+<div id="body">
+	<div id="contentCol">
+		
+		<div id="pageError" class="homeBlock">
+			<h2>whoops, an error...</h2>
+			<p>... one of them <span class="blue">500 Internal Server Error</span> ones. i'd give us a few minutes then try one of the links on the right if i were you.</p>
+		</div>
+		
+		<div class="clear">&nbsp;</div>
+
+	</div>
+		
+	<div id="sideCol">
+		<ul>
+			<li class="home"><a href="/" title="home">home</a></li>
+			<li class="pics"><a href="/pictures/" title="all pics">all pics</a></li>
+			<li class="tags"><a href="/tags/" title="pics by tag">pics by tag</a></li>
+			<li class="remove"><a href="/remove/" title="remove pic">remove pic</a></li>
+
+		</ul>		
+	</div>
+		
+	<div class="clear">&nbsp;</div>
+		
+</div>
+	
+<div id="feet">
+	<div id="leftFoot">
+		<p>concept and scanning by <a href="mailto:johnnie[at]roobarreunion.com" title="speak to johnnie">johnnie</a>. design and code by <a href="mailto:snoop[at]roobarreunion.com" title="speak to snoop">snoop</a>. buy us a beer would ya.</p>
+
+	</div>
+	<div id="rightFoot">
+		<ul>
+			<li><a href="http://validator.w3.org/check/referer" title="validate xhtml (opens in a new window)" target="_blank">xhtml</a> |</li>
+			<li><a href="http://jigsaw.w3.org/css-validator/check/referer" title="validate css (opens in a new window)" target="_blank">css</a></li>
+		</ul>
+	</div>
+
+</div>
+
+</body>
+</html>

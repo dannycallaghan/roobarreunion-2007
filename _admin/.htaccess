@@ -1,0 +1,6 @@
+AuthUserFile /home/jbdpqh/public_html/.htpasswd
+AuthGroupFile /home/jbdpqh/public_html/.htgroups
+AuthName "restricted access"
+AuthType Basic
+
+require group admin

@@ -1,0 +1,416 @@
+html, body {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+ 
+body {
+	font: 100%/1.25 "Lucida Grande", "Trebuchet MS", "Bitstream Vera Sans", Verdana, Helvetica, sans-serif;
+	color: #666;
+	background: #fff;
+}
+
+body.admin { 
+	text-align: left;
+	background: #999 url(/_i/admin/pagebg.gif) top left repeat-y;
+}
+
+body.admin #feet {
+	display: none;
+}
+
+/* width (invariably, a table) */
+.full { width: 100%; }
+/* /width (invariably, a table) */
+
+/* vertical align */
+.vAlignTop { vertical-align: top; }
+.vAlignBottom { vertical-align: bottom; }
+.vAlignMiddle { vertical-align: middle; }
+/* /vertical align */
+
+/* text align */
+.alignLeft { text-align: left; }
+.alignRight { text-align: right; }
+.alignCenter { text-align: center; }
+/* /text align */
+
+/* text formatting */
+.bold { font-weight: bold; }
+.normal { font-weight: normal; font-style: normal; }
+.italic { font-style: italic; }
+/* /text formatting */
+
+/* displays */
+.inline { display: inline; }
+.block { display: block; }
+.none { display: none; }
+/* /displays */
+
+/* clears */
+.clear { width: 1px; height: 1px; clear: both; overflow: hidden; }
+.clearR { width: 1px; height: 1px; clear: right; overflow: hidden; }
+.clearL { width: 1px; height: 1px; clear: left; overflow: hidden; }
+/* /clears */
+
+/* floats */
+.fRight { float: right; }
+.fLeft { float: left; }
+.fNone { float: none; }
+/* /floats */
+
+/* image aligns/floats */
+img.fRight { float: right; margin: 0 0 10px 10px; }
+img.fLeft { float: left; margin: 0 10px 10px 0; }
+/* /image aligns */
+
+/* margins */
+.margin { margin: 1.8em; }
+.marginTop { margin-top: 1.8em; }
+.marginRight { margin-right: 1.8em; }
+.marginBottom { margin-bottom: 1.8em; }
+.marginLeft { margin-left: 1.8em; }
+.marginH { margin: 0 1.8em; }
+.marginV { margin: 1.8em 0; }
+.marginNone { margin: 0; }
+/* /margins */
+ 
+/* formatting */
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+ 
+h1 {
+	font-size: 1.4em;
+	margin: 0 0 1em 0;
+}
+ 
+h2 {
+	font-size: 1em;
+	margin: 0 0 1em 0;
+}
+ 
+h3 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+p, ul, ol {
+	margin: 0 0 1em 0;
+}
+ 
+ul, ol {
+	list-style: none;
+	padding: 0 0 0 40px;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+ul.standard {
+	list-style: square;
+}
+
+small {
+	font-size: 0.85em;
+}
+ 
+img {
+	border: 0;
+	display: block;
+}
+ 
+a:link,
+a:visited,
+a:active  {
+	text-decoration: none;
+	color: #c30;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+/* /formatting */
+
+/* forms */ 
+form {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+ 
+input, select, textarea {
+	font: 1em "Lucida Grande", "Trebuchet MS", "Bitstream Vera Sans", Verdana, Helvetica, sans-serif;
+}
+ 
+textarea {
+	line-height: 1.25;
+}
+ 
+label {
+	cursor: pointer;
+}
+/* /forms */
+
+/* tables */ 
+table {
+	border: 0;
+	margin: 0 0 18px 0;
+	padding: 0;
+}
+ 
+table tr td {
+	padding: 2px;
+}
+/* /tables */
+
+/* admin */
+#adminPage { 
+	width: 640px; 
+	padding: 20px; 
+	font-size: 75%;
+	height: 100%;
+}
+
+#adminPage .hr {
+	height: 2px;
+	border-top: dashed 1px #ccc;
+	margin: 9px 0 8px 0;
+	overflow: hidden;	
+}
+
+ul#adminList {
+	margin: 0 0 1em 0;
+	padding: 8px 0;
+	border-top: dashed 1px #ccc;	
+	border-bottom: dashed 1px #ccc;	
+}	
+
+ul#adminList li {
+	display: inline; 
+}
+
+.adminPic {
+	margin: 0 0 10px 0;
+}
+
+.adminPic .pic {
+	float: left;
+	margin-right: 10px;
+}
+
+.adminPic .pic img {
+	border: solid 2px #ccc;
+}
+
+.adminPic p {
+	font-size: 1.2em;
+	margin: 0;
+}
+
+.adminPic form {
+	margin-top: 10px;
+	display: block;
+}
+
+.adminPagerLeft {
+	float: left;
+	width: 250px;
+}
+
+.adminPagerLeft p {
+	margin: 0;
+}
+
+.adminPagerRight ul {
+	padding-left: 0;
+	margin: 0;
+	
+}
+
+.adminPagerRight li {
+	display: inline;
+	padding: 0 2px;
+}
+
+.adminPagerRight li a {
+	padding: 0 2px;
+}
+
+.adminPagerRight li a:hover {
+	background-color: #ccc;
+}
+
+.adminPagerRight .pageIsOn {
+	font-weight: bold;
+}	
+
+.adminPagerRight {
+	float: left;
+	width: 390px;
+	text-align: right;
+}
+
+#adminPage .formRow {
+	margin: 0 0 10px 0;
+}	
+
+#adminPage .formRow .label {
+	float: left;
+	text-align: right;
+	margin-right: 10px;
+	width: 150px;
+	padding-top: 4px;
+}
+
+#adminPage .checkbox .label {
+	padding-top: 2px !important;
+}
+
+* html #adminPage .formRow .label {
+	padding-top: 6px;
+}
+
+* html #adminPage .checkbox .label {
+	padding-top: 4px !important;
+}
+
+#adminPage .formRow .input {
+	float: left;
+	width: 350px;
+}
+
+#adminPage .formRow .input input.text {
+	width: 200px;
+}
+
+#adminPage .formRow .input select {
+	width: 204px;
+}
+
+* html #adminPage .formRow .input select {
+	width: 206px;
+}
+
+#adminMainPic {
+	border: solid 1px #ccc;
+	margin: 10px 0;
+}
+/* /admin */
+
+/* highslide */
+.highslide {
+	cursor: url(/_i/highslide/zoomin.cur), pointer;
+    outline: none;
+}
+.highslide img {
+	border: 2px solid gray;
+}
+.highslide:hover img {
+	border: 2px solid white;
+}
+
+.highslide-image {
+    border: 10px solid white;
+}
+.highslide-image-blur {
+}
+.highslide-caption {
+    display: none;
+    
+    border: 2px solid white;
+    border-top: none;
+    font-family: Verdana, Helvetica;
+    font-size: 10pt;
+    padding: 5px;
+    background-color: white;
+}
+.highslide-loading {
+    display: block;
+	color: white;
+	font-size: 9px;
+	font-weight: bold;
+	text-transform: uppercase;
+    text-decoration: none;
+	padding: 3px;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+    background-color: black;
+    /* */
+    padding-left: 22px;
+    background-image: url(/_i/highslide/loader.gif);
+    background-repeat: no-repeat;
+    background-position: 3px 1px;
+    /'* */'
+}
+a.highslide-credits,
+a.highslide-credits i {
+    padding: 2px;
+    color: silver;
+    text-decoration: none;
+	font-size: 10px;
+}
+a.highslide-credits:hover,
+a.highslide-credits:hover i {
+    color: white;
+    background-color: gray;
+}
+
+.highslide-move {
+    cursor: move;
+}
+
+.highslide-overlay {
+	display: none;
+}
+
+/* Controlbar example */
+.controlbar {	
+	background: url(/_i/highslide/controlbar4.gif);
+	width: 167px;
+	height: 34px;
+}
+.controlbar a {	
+	display: block;
+	float: left;
+	/*margin: 0px 0 0 4px;*/	
+	height: 27px;
+}
+.controlbar a:hover {
+	background-image: url(/_i/highslide/controlbar4-hover.gif);
+}
+.controlbar .previous {
+	width: 50px;
+}
+.controlbar .next {
+	width: 40px;
+	background-position: -50px 0;
+}
+.controlbar .highslide-move {
+	width: 40px;
+	background-position: -90px 0;
+}
+.controlbar .close {
+	width: 36px;
+	background-position: -130px 0;
+}
+
+/* Necessary for functionality */
+.highslide-display-block {
+    display: block;
+}
+.highslide-display-none {
+    display: none;
+}
+/* /highslide */
+
+/* comments */
+.commentError { 
+	display: none; 	
+}
+/* /comments */

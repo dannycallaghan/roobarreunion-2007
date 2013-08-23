@@ -1,0 +1,631 @@
+/* set up */
+*	{
+	font-family: arial, tahoma, verdana;
+	margin: 0;
+	padding: 0;
+	}
+
+body {
+	background: #000 url(/_i/bg.gif) left top repeat-x;
+	color: #fff;
+	font-size: 100%;
+	line-height: 1.2em;
+}
+/* /set up */
+
+/* width (invariably, a table) */
+.full { width: 100%; }
+/* /width (invariably, a table) */
+
+/* vertical align */
+.vAlignTop { vertical-align: top; }
+.vAlignBottom { vertical-align: bottom; }
+.vAlignMiddle { vertical-align: middle; }
+/* /vertical align */
+
+/* text align */
+.alignLeft { text-align: left; }
+.alignRight { text-align: right; }
+.alignCenter { text-align: center; }
+/* /text align */
+
+/* text formatting */
+.bold { font-weight: bold; }
+.normal { font-weight: normal; font-style: normal; }
+.italic { font-style: italic; }
+.strike { text-decoration: line-through; }
+/* /text formatting */
+
+/* displays */
+.inline { display: inline; }
+.block { display: block; }
+.none { display: none; }
+/* /displays */
+
+/* clears */
+.clear { width: 1px; height: 1px; clear: both; overflow: hidden; }
+.clearR { width: 1px; height: 1px; clear: right; overflow: hidden; }
+.clearL { width: 1px; height: 1px; clear: left; overflow: hidden; }
+/* /clears */
+
+/* floats */
+.fRight { float: right; }
+.fLeft { float: left; }
+.fNone { float: none; }
+/* /floats */
+
+/* image aligns/floats */
+img.fRight { float: right; margin: 0 0 10px 10px; }
+img.fLeft { float: left; margin: 0 10px 10px 0; }
+/* /image aligns */
+
+/* margins */
+.margin { margin: 1.8em; }
+.marginTop { margin-top: 1.8em; }
+.marginRight { margin-right: 1.8em; }
+.marginBottom { margin-bottom: 1.8em; }
+.marginLeft { margin-left: 1.8em; }
+.marginH { margin: 0 1.8em; }
+.marginV { margin: 1.8em 0; }
+.marginNone { margin: 0; }
+/* /margins */
+
+/* general formatting */
+img {
+	border: none;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dotted #ff0;
+	color: #ff0;
+}
+
+a:hover { border-bottom: 1px solid #ff0; }
+
+	/* [hack to make IE display dotted borders properly] */
+* html a {
+	background: url(/_i/ielink.gif) bottom left repeat-x;
+	border-bottom: none;
+	padding-bottom: 1px;
+}
+
+* html a:hover { 
+	background: url(/_i/ielinkhover.gif) bottom left repeat-x;
+	border-bottom: none;
+	padding-bottom: 1px; 
+}
+	/* [/hack to make IE display dotted borders properly] */
+
+h1 {
+	margin: 20px 0 0 20px;
+}
+
+* html h1 a,
+* html h1 a:hover, 
+h1 a,
+h1 a:hover {
+	display: block;
+	width: 398px;
+	height: 118px;
+	text-indent: -9999px;
+	font-size: 1px;
+	background: url(/_i/logo.jpg) 0 0 no-repeat;
+	border: 0;
+}
+
+h2, h3, h4, h5, h6 { font-family: Georgia, serif; }
+
+h2 {
+	margin: 0;
+	font-size: 140%;
+}
+
+ul { list-style: none; }
+
+p { margin: 0 0 1.8em 0; }
+
+.hr {
+	height: 2px; 
+	border-top: solid 1px #666; 
+	margin-top: 15px; 
+	overflow: hidden;
+}
+
+.blue { color: #3cf; }
+
+.small { font-size: 70%; color: #666; }
+/* /general formatting */
+
+/* structure */
+#body {
+		width: 720px;
+		margin: 10px 0 10px 20px;
+	}
+	
+#sideCol {
+	float: left;
+	width: 154px;
+	}
+	
+#sideCol img {
+	display: block;
+	margin-bottom: 10px;
+}
+	
+#contentCol {
+	width: 556px;
+	float: left;
+	margin-right: 10px;
+}
+/* structure */
+
+/* gallery pages */	
+.thumb {
+	float: left;
+	margin: 0 4px 4px 0;
+}
+	
+#contentCol .fifth { margin-right: 0; }
+	
+.thumb img { border: solid 4px #fff; border-bottom: solid 20px #fff; }
+
+.thumb a,
+.thumb a:hover { 
+	border: 0; 
+	background-image: none; 
+}
+/* gallery pages */	
+
+/* home page */
+#mainPic {
+	position: absolute;
+	left: 402px; /* 410px */
+	top: 80px;
+	z-index: 100;
+}
+
+#mainPic a,
+#mainPic a:hover {
+	border: none;
+	background: none;
+}
+
+#homeIntro {
+	width: 362px;
+	min-height: 217px;
+	text-transform: lowercase;
+	font-size: 90% !important; 
+	line-height: 1.2em;
+	margin: -10px 0 12px 0;
+}	
+
+* html #homeIntro { height: 217px; }
+
+#homeIntro p { margin: 0 0 0.4em 0; }
+
+#homeIntro strong { color: #3cf; }
+
+.homeBlock {
+	float: left;
+	width: 232px;
+	margin: 10px 10px 10px 0;
+	padding-top: 4px;
+	min-height: 90px;
+}
+
+.homeBlock a {
+	border: 0;
+	background: 0;
+}
+
+#body .homeBlock a:hover {
+	border: none !important;
+	background-image: none !important;
+}
+
+#contentCol .homeBlock { width: 434px; }
+
+#contentCol #homeCommentLower.homeBlock { width: auto; }
+
+* html .homeBlock {
+	height: 90px;
+}
+
+body .noMargin {
+	margin-right: 0;
+}
+
+.homeBlock h2 {
+	margin-left: 60px;
+	color: #ff0;
+}
+
+#body .homeBlock h2 a,
+#body .homeBlock h2 a:hover {
+	font-family: Georgia, serif;
+	border: none !important;
+	background-image: none !important;
+}
+
+.homeBlock p {
+	margin: 3px 0 0 60px;
+	font-size: 90%;
+	line-height: 1.1em;
+}
+
+#contentCol #pageTag,
+#contentCol #pageRemove {
+	width: auto;
+	margin: 0;
+}
+
+#homeRemove,
+#pageRemove { background: #000 url(/_i/icon_remove.jpg) 0 0 no-repeat; }
+#homeTag,
+#pageTag { background: #000 url(/_i/icon_tag.jpg) 0 0 no-repeat; }
+#homeUpload { background: #000 url(/_i/icon_upload.jpg) 0 0 no-repeat; }
+#homeComment,
+#homeCommentLower { background: #000 url(/_i/icon_comment.jpg) 0 0 no-repeat; }
+#pageError { background: #000 url(/_i/icon_error.jpg) 0 0 no-repeat; }
+/* /home page */
+
+/* content page nav */
+#sideCol li { display: block; }
+
+#sideCol li a {
+	display: block;
+	width: 154px;
+	color: #fff;
+	font-size: 1px;
+	text-indent: -9999px;
+	font-size: 1px;
+	height: 60px;
+}
+
+#sideCol li a { border: none; }
+#sideCol li a:hover { border: none; }
+
+#sideCol li.home a { background: url(/_i/navitemHome.jpg) 0 0 no-repeat; }
+#sideCol li.tags a { background: url(/_i/navitemTags.jpg) 0 0 no-repeat; }
+#sideCol li.pics a { background: url(/_i/navitemPics.jpg) 0 0 no-repeat; }
+#sideCol li.remove a { background: url(/_i/navitemRemove.jpg) 0 0 no-repeat; }
+#sideCol li.comments a { background: url(/_i/navitemComments.jpg) 0 0 no-repeat; }
+/* /content page nav */
+
+/* pagination */
+.pagination {
+	padding: 0 10px;
+	height: 60px;
+	background: url(/_i/pagination.gif) 0 0 no-repeat;
+	margin-bottom: 10px;
+}
+
+.pagination .left,
+.pagination .right {
+	width: 268px;
+	float: left;
+}
+
+.pagination .right { text-align: right; }
+
+.pagination li { display: inline; }
+
+.pagination li a {
+	border: 0;
+	background: none;
+}
+
+.pagination p {
+	margin: 25px 0 0 0;
+	font-size: 13px;
+}
+
+.pagination ul { margin: 24px 0 0 0; }
+
+* html .pagination ul { margin: 25px 0 0 0; }
+
+.pagination li { font-size: 13px; }
+
+.pagination strong,
+.pagination a { color: #3cf; font-weight: normal; }
+
+.pagination a:hover,
+.pagination .pageIsOn {
+	border: 0;
+	background: none;
+	color: #ff0;
+}
+
+/* /pagination */
+
+/* tag cloud */
+ul#tags li {
+	display: inline;
+	white-space: nowrap;
+	font-size: 90%;
+	line-height: 1.8em;
+}
+
+ul#tags li a {
+	border: 0;
+	background-image: none;
+	padding: 0 4px;
+}
+
+ul#tags li a:hover { border-bottom: 1px solid #ff0; }
+/* tag cloud */
+
+/* footer */
+#feet { 
+	width: 720px; 
+	padding: 2px 0 10px 0; 
+	font-size: 75%;
+	margin-left: 20px;
+	color: #999;
+	border-top: solid 1px #666;
+}
+
+#leftFoot {
+	width: 500px;
+	float: left;
+}
+
+#rightFoot {
+	width: 220px;
+	float: left;
+	text-align: right;
+}
+
+#rightFoot li {
+	display: inline;
+}
+
+#feet a {
+	color: #cc0;
+	border-color: #cc0;
+}
+
+#feet a:hover { border-color: #cc0; }
+/* /footer */
+
+/* highslide */
+.highslide {
+	cursor: url(/_i/highslide/zoomin.cur), pointer;
+    outline: none;
+}
+.highslide img {
+	border: 2px solid gray;
+}
+.highslide:hover img {
+	border: 2px solid white;
+}
+.highslide-image {
+    border: 10px solid white;
+	border-bottom: 1px solid white;
+}
+.highslide-image-blur {
+}
+.highslide-caption {
+    display: none;
+    border: none;
+    font-family: Verdana, Helvetica;
+    padding: 2px 8px 8px 8px;
+    background-color: white;
+}
+.highslide-loading,
+.highslide-loading:hover  {
+    display: block;
+	width: 32px;
+	height: 32px;
+    background: url(/_i/loader.gif) 0 0 no-repeat;
+	border: 0;
+}
+.highslide-move {
+    cursor: move;
+}
+.highslide-overlay {
+	display: none;
+}
+	/* Controlbar example */
+.controlbar,
+.controlbar:hover {	
+	background: url(/_i/controlbar.gif);
+	width: 110px;
+	height: 30px;
+	border: 0;
+}
+#controlbar ul { margin-left: 8px; }
+#controlbar li { float: left; }
+#controlbar li a {
+	display: block;
+	height: 23px;
+	width: 23px;
+	background-repeat: no-repeat;
+	border: 0;
+	font-size: 1px;
+	text-indent: -9999px; 
+}
+#controlbar li#controlLeft a { background-image: url(/_i/controlbarLeft.gif); margin-right: 2px; }
+#controlbar li#controlRight a { background-image: url(/_i/controlbarRight.gif); margin-right: 2px; }
+#controlbar li#controlMove a { background-image: url(/_i/controlbarMove.gif); margin-right: 2px; }
+#controlbar li#controlClose a { background-image: url(/_i/controlbarClose.gif); }
+#controlbar li a:hover {
+	background-position: -23px 0;
+}
+.highslide-caption h3 {
+	font-size: 90%;
+	color: #000;
+	margin: 0;
+}
+.highslide-caption p {
+	margin: 0;
+	font-size: 80%;
+}
+.highslide-caption dt,
+.highslide-caption dd,
+.highslide-caption li {
+	display: inline;
+	white-space: nowrap;
+	color: #000;
+	font-size: 80%;
+}
+.highslide-caption a {
+	color: #c00;
+	border-color: #666;
+}
+.highslide-caption li a {
+	color: #000;
+}
+.highslide-caption a:hover { border-color: #000; }
+	/* [hack to make IE display dotted borders properly] */
+* html .highslide-caption a {
+	background-image: url(/_i/ielinkgrey.gif);
+}
+* html .highslide-caption a:hover { 
+	background-image: url(/_i/ielinkhovergrey.gif);
+}
+	/* [/hack to make IE display dotted borders properly] */
+	/* Necessary for functionality */
+.highslide-display-block {
+    display: block;
+}
+.highslide-display-none {
+    display: none;
+}
+/* /highslide */
+
+/* comments */
+.comment ul {
+	margin: 10px 0;
+}
+	
+.comment ul a,
+.comment ul a:hover {
+	border: 0;
+	background: none;
+}
+
+#homeCommentLower p { font-size: 80%; }
+
+#homeComment li {
+	float: left;
+	margin-right: 10px;
+}
+
+#homeComment li a,
+#homeComment li a:hover {
+	border: none;
+	background: none;
+}
+
+#homeComment ul { margin: 10px 0 0 60px; }
+
+#commentthumb { margin-top: 10px; }
+
+.comment {
+	border-bottom: solid 1px #666;
+	padding-top: 5px;
+	text-transform: lowercase;
+}	
+
+div#contentCol .noBorder { border-bottom: none; }
+	
+.comment h3 {
+	font-size: 90%;
+	margin: 0;
+	line-height: 1em;
+}
+
+.comment h3 a {
+	font-family: Georgia, serif;
+	color: #3cf;
+	border-color: #3cf;
+}
+
+.comment h3 a:hover { border-color: #3cf; }
+
+	/* [hack to make IE display dotted borders properly] */
+* html .comment h3 a {
+	background-image: url(/_i/ielinkblue.gif);
+}
+* html .comment h3 a:hover { 
+	background-image: url(/_i/ielinkhoverblue.gif);
+}
+	/* [/hack to make IE display dotted borders properly] */
+
+.comment p.date { 
+	color: #fff; 
+	font-size: 70%; 
+	margin: 0 0 0.5em 0; 
+	line-height: 1.6em;
+}
+
+.comment p { 
+	font-size: 90%;
+	color: #ff0;
+	margin: 0 0 0.6em 0;
+	line-height: 1em;
+}
+/* /comments */
+
+/* forms */
+
+form#remove { margin-top: 20px; }
+
+.formRow p { 
+	margin: 0 0 2px 160px; 
+	font-size: 90%;
+	color: #ff0;
+}
+
+.formRow p.small {
+	margin: 0;
+	font-size: 70%;
+	color: #666;
+}
+
+.commentError { display: none; }
+
+.formRow { margin: 0 0 10px 0; }
+
+.formRow .label {
+	margin-right: 10px;
+	width: 150px;
+	float: left;
+	text-align: right;
+	font-size: 90%;
+}
+
+.formRow .input {
+	width: 255px;
+	float: left;
+}
+
+.formRow .text {
+	width: 250px;
+	border: none;
+	padding: 2px;
+	font-size: 90%;
+	background: #fff url(/_i/formbg.gif) top right no-repeat;
+}
+
+.formRow .textsmall {
+	width: 50px;
+	border: none;
+	padding: 2px;
+	font-size: 90%;
+	background: #fff url(/_i/formbg.gif) top right no-repeat;
+}
+
+.formRow .checkbox { margin-top: 2px; }
+
+.formRow textarea {
+	width: 250px;
+	height: 100px;
+	padding: 2px;
+	font-size: 90%;
+	background: #fff url(/_i/formbg.gif) top right no-repeat;
+	border: none;
+}
+/* /forms */	
